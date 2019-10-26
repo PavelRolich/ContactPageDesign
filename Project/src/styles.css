@@ -1,16 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
-
 html {
   height: 100%;
 }
-
 body {
   display: flex;
   justify-content: center;
-  align-items: center;  
-  align-content: center; 
-  margin: 0; 
-  font-family: Roboto, "Helvetica Neue", sans-serif; 
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
   background-image: url(http://st.gde-fon.com/wallpapers_original/73987_zerkalnyj_cherep_chyornyj_fon_1600x1200_www.Gde-Fon.com.jpg);
   background-size: cover;
 }

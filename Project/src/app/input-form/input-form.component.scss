@@ -1,0 +1,42 @@
+.card {
+  max-width: 300px;
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  background-color: #ffffff;
+
+  .form {
+    width: 100%;
+
+    .form-field {
+      width: 100%;
+      margin: auto;
+    }
+  }
+
+  .link-block {
+    border: 2px solid #3f51b5;
+    border-radius: 5px;
+    width: 200px;
+    height: 25px;
+    margin: auto;
+    
+    .link {
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      text-decoration: none;
+      color: #3f51b5;
+
+      &:hover {
+        background-color: #3f51b5;
+        color: #ffffff;
+      }
+    }
+  }  
+}

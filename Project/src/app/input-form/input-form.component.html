@@ -1,0 +1,29 @@
+<mat-card class="card">
+  <form class="form">
+    <mat-form-field class="form-field" appearance="outline">
+      <mat-label class="label-form-field">Your Name</mat-label>
+      <input class="form-input" matInput>
+    </mat-form-field>
+    <mat-form-field class="form-field" appearance="outline">
+      <mat-label class="label-form-field">Email</mat-label>
+      <input matInput [formControl]="emailFormControl">
+      <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+        Please enter a valid email address
+      </mat-error>
+      <mat-error *ngIf="emailFormControl.hasError('required')">
+        Email is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="form-field" appearance="outline">
+      <mat-label class="label-form-field">Subject</mat-label>
+      <input matInput>
+    </mat-form-field>
+    <mat-form-field class="form-field" appearance="outline">
+      <mat-label class="label-form-field">Message</mat-label>
+      <textarea class="textarea-form" matInput></textarea>
+    </mat-form-field>
+  </form>
+  <div class="link-block">
+    <a class="link" mat-stroked-button [routerLink]="['/message']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><p>Send message</p></a>
+  </div>
+</mat-card>
